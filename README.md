@@ -1,2 +1,15 @@
-# umi3-jsx-antPro
-一个用umi3搭建的antPro框架
+# umi project
+
+## Getting Started
+
+Install dependencies,
+
+```bash
+$ yarn
+```
+
+Start the dev server,
+
+```bash
+$ yarn start
+```

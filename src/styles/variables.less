@@ -1,0 +1,53 @@
+@import '~antd/es/style/themes/index.less';
+
+// 主题色调
+@theme-color: #ff4e03; // 全局主色
+@primary-color: @theme-color; // 全局主色
+@error-color: #ff5b2c; // 错误色
+
+// 文本颜色
+@heading-color: rgba(0, 0, 0, 0.85); // 标题色
+@text-color: rgba(0, 0, 0, 0.65); // 主文本色
+@text-color-secondary: rgba(0, 0, 0, 0.45); // 次文本色
+@disabled-color: rgba(0, 0, 0, 0.25); // 失效色
+
+@border-color-base: #d9d9d9; // 边框色
+@border-color-light: #f1f1f4; // 边框色
+
+@border-color-Input: rgba(255, 78, 3, 0.52); // 快速搜索边框色
+
+@font-size-base: 14px; // 主字号
+@font-size-lg: 16px; // 标题等大小
+@font-size-sm: 12px; // 次要等大小
+@border-radius-base: 2px; // 圆角
+@box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15); // 浮层阴影
+
+@global-content-space: 24px; // content 内容的边距
+
+// 为了让 item 并列且每个显示错误提示
+.multiInlineFormItem {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+
+  :global {
+    .ant-form-item-control-wrapper {
+      > .ant-form-item-control {
+        > .ant-form-item-children {
+          white-space: unset;
+
+          > .ant-form-item {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 自动延展背景图片
+.autoBackGroundImage {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
